@@ -55,7 +55,7 @@ submit.addEventListener("click", function(){
   if(placeName.value ==""){
     alert("Fill Form")
   }else{
-    alert(placeName.value +" To Booked")
+    alert(placeName.value +" Tour Booked")
   };
 })
 
