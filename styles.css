@@ -428,11 +428,19 @@ nav {
 }
 
 .guide__grid {
-  margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-auto-columns: 30%;
+  grid-column-gap: 10px;
+  grid-auto-flow: column;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
+
+.guide__grid::-webkit-scrollbar {
+  display: none;
+} 
 
 .guide__card {
   overflow: hidden;
@@ -515,10 +523,18 @@ nav {
 }
 
 .client__grid {
-  margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-auto-columns: 30%;
+  grid-column-gap: 10px;
+  grid-auto-flow: column;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.client__grid::-webkit-scrollbar {
+  display: none;
 }
 
 .client__card {
@@ -526,6 +542,7 @@ nav {
   border-radius: 10px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  overflow: hidden;
 }
 
 .client__card__header {
@@ -759,11 +776,18 @@ nav {
   }
 
   .guide__grid {
-    grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
   }
 
   .client__grid {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
   }
 
   .subscribe__container input {
