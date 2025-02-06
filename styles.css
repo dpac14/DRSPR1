@@ -440,7 +440,7 @@ nav {
 
 .guide__grid::-webkit-scrollbar {
   display: none;
-} 
+}
 
 .guide__card {
   overflow: hidden;
@@ -469,7 +469,7 @@ nav {
   opacity: 1;
 }
 
-.guide__socials > div {
+.guide__socials>div {
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -776,10 +776,10 @@ nav {
   }
 
   .guide__grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 
   }
 
